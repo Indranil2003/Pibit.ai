@@ -1,0 +1,341 @@
+Prompt:
+
+You are given a resume in text format. Parse the content and structure it into JSON format. The resume includes sections such as Personal Information, Education, Experience, Skills, Certifications, and Projects. Extract and organize the information into the following JSON structure:
+
+{
+  "PersonalInformation": {
+    "Name": "Full Name",
+    "Email": "Email Address",
+    "Phone": "Phone Number",
+    "Address": "Address"
+  },
+  "Education": [
+    {
+      "Institution": "Name of the Institution",
+      "Degree": "Degree Name",
+      "FieldOfStudy": "Field of Study",
+      "Year": "Year of Graduation"
+    }
+  ],
+  "Experience": [
+    {
+      "Company": "Company Name",
+      "Role": "Job Title",
+      "Duration": "Start Date - End Date",
+      "Responsibilities": [
+        "Responsibility 1",
+        "Responsibility 2"
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "Project Title",
+      "Description": "Project Description",
+      "Technologies": [
+        "Technology 1",
+        "Technology 2"
+      ]
+    }
+  ],
+  "Skills": [
+    "Skill 1",
+    "Skill 2"
+  ],
+  "Certifications": [
+    {
+      "Certification": "Certification Name",
+      "IssuingOrganization": "Issuing Organization",
+      "Date": "Date of Issue"
+    }
+  ]
+}
+
+Here's the resume text:
+
+[Insert Resume Text Here]
+
+Please provide the extracted information in the specified JSON format. Ensure that projects and job experiences are categorized separately if they are present in the resume.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Sample Resume text :
+
+                              Indranil Thakare 
+  indranilthakare2003@gmail.com +917558366721 Tilekar nagar, pune, India 
+ 
+ 
+EDUCATION 
+❖ School Of Scholars , Akola 
+89.84%|10th                                 2019 
+ 
+❖ Late Jyoti Janolaker Jr College , Akola 
+94.17%|12th                                  2021 
+ 
+❖ Vishwakarma Institute Of Information 
+Technology (VIIT) Pune 
+             
+ 
+ 
+ 
+❖ Depression Detection using Deep Learning 
+▪  Implemented a deep learning based 
+multi-modal project predicting depression 
+through audio, text, and video 
+recordings. 
+▪ Dataset used : DAIC-WOZ dataset 
+▪ Technology used :Python , TensorFlow , 
+CNN , RNN  , Pandas , NumPy , Jupyter 
+Notebook , SVM , Leaky ReLU , 
+Matplotlib .  
+ 
+❖ Cab Management System 
+▪  Designed and implemented a 
+comprehensive system for managing cab 
+bookings, drivers, and customer 
+interactions.  
+▪ Technology used :Python, SQL , Tkinter . 
+ 
+❖ Sound Control using Hand Detection 
+▪ Created a Sound Control system 
+using hand detection with the 
+OpenCV library in Python. 
+▪ Technology used : Python , 
+OpenCV , Mediapipe .  
+❖ Snake Game 
+▪ Developed a classic Snake Game 
+using Python  
+▪ Technology used: Python , Tkinter, 
+Pygame . 
+ 
+❖ Physics Calculator 
+▪ Created a versatile physics calculator 
+capable of solving a variety of physics
+related problems and equations. 
+▪ Technology used : C++  
+ 
+ 
+SKILLS 
+▪ Java Certified Programmer 
+▪ Certified Computer Networking Expert 
+▪ Certified Python Programmer 
+▪ Certified Python Programmer for Data Science  
+▪ Certified Data Analyst 
+▪ DSA/ Problem Solving 
+▪ SQL, MongoDB 
+▪ Certified Excel User 
+▪ Automation Anywhere Certified Professional 
+▪ Meta Spark Studio 
+▪ AR/VR technology 
+▪ JIRA  Certified User 
+▪ Power BI 
+▪  
+CERTIFICATES 
+▪ IBM SkillsBuild Intership-Data Analytics || 
+CSRBOX 
+▪ Google Analytics for Beginners | Google 
+Analytics Academy 
+ 
+▪ Advanced Google Analytics | Google Analytics  
+▪ Academy Data Science | IBM Cloud Learn Hub 
+▪ The Art of Data Visualization | Off Book | PBS 
+Digital Studios 
+ 
+▪ Excel Basics for Data Analysis – Coursera 
+ 
+▪ IBM SkillsBuild Internship- MS Excel || CSRBOX 
+ 
+▪ RPA: Automation Anywhere  Professional 
+Certificate 
+ 
+▪ AI-ML certificate by AICTE 
+ 
+▪ AR-VR certificate by AICTE 
+ 
+❖ AI-ML virtual internship by AICTE 
+❖ AR-VR virtual internship by AICTE 
+❖ IBM SkillBuild Internship – Data Analytics 
+❖ IBM SkillBuild Internship – MS Excel 
+ 
+ 
+ -----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Output:
+
+{
+  "PersonalInformation": {
+    "Name": "Indranil Thakare",
+    "Email": "indranilthakare2003@gmail.com",
+    "Phone": "+917558366721",
+    "Address": "Tilekar Nagar, Pune, India"
+  },
+  "Education": [
+    {
+      "Institution": "School Of Scholars",
+      "Degree": "10th",
+      "FieldOfStudy": "General",
+      "Year": "2019"
+    },
+    {
+      "Institution": "Late Jyoti Janolaker Jr College",
+      "Degree": "12th",
+      "FieldOfStudy": "General",
+      "Year": "2021"
+    },
+    {
+      "Institution": "Vishwakarma Institute Of Information Technology (VIIT)",
+      "Degree": "Undergraduate",
+      "FieldOfStudy": "Information Technology",
+      "Year": "Ongoing"
+    }
+  ],
+  "Experience": [],
+  "Projects": [
+    {
+      "Title": "Depression Detection using Deep Learning",
+      "Description": "Implemented a deep learning based multi-modal project predicting depression through audio, text, and video recordings.",
+      "Technologies": [
+        "Python",
+        "TensorFlow",
+        "CNN",
+        "RNN",
+        "Pandas",
+        "NumPy",
+        "Jupyter Notebook",
+        "SVM",
+        "Leaky ReLU",
+        "Matplotlib"
+      ]
+    },
+    {
+      "Title": "Cab Management System",
+      "Description": "Designed and implemented a comprehensive system for managing cab bookings, drivers, and customer interactions.",
+      "Technologies": [
+        "Python",
+        "SQL",
+        "Tkinter"
+      ]
+    },
+    {
+      "Title": "Sound Control using Hand Detection",
+      "Description": "Created a Sound Control system using hand detection with the OpenCV library in Python.",
+      "Technologies": [
+        "Python",
+        "OpenCV",
+        "Mediapipe"
+      ]
+    },
+    {
+      "Title": "Snake Game",
+      "Description": "Developed a classic Snake Game using Python.",
+      "Technologies": [
+        "Python",
+        "Tkinter",
+        "Pygame"
+      ]
+    },
+    {
+      "Title": "Physics Calculator",
+      "Description": "Created a versatile physics calculator capable of solving a variety of physics-related problems and equations.",
+      "Technologies": [
+        "C++"
+      ]
+    }
+  ],
+  "Skills": [
+    "Java Certified Programmer",
+    "Certified Computer Networking Expert",
+    "Certified Python Programmer",
+    "Certified Python Programmer for Data Science",
+    "Certified Data Analyst",
+    "DSA/Problem Solving",
+    "SQL",
+    "MongoDB",
+    "Certified Excel User",
+    "Automation Anywhere Certified Professional",
+    "Meta Spark Studio",
+    "AR/VR Technology",
+    "JIRA Certified User",
+    "Power BI"
+  ],
+  "Certifications": [
+    {
+      "Certification": "IBM SkillsBuild Internship - Data Analytics",
+      "IssuingOrganization": "CSRBOX",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "Google Analytics for Beginners",
+      "IssuingOrganization": "Google Analytics Academy",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "Advanced Google Analytics",
+      "IssuingOrganization": "Google Analytics Academy",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "Data Science",
+      "IssuingOrganization": "IBM Cloud Learn Hub",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "The Art of Data Visualization",
+      "IssuingOrganization": "Off Book | PBS Digital Studios",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "Excel Basics for Data Analysis",
+      "IssuingOrganization": "Coursera",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "IBM SkillsBuild Internship - MS Excel",
+      "IssuingOrganization": "CSRBOX",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "RPA: Automation Anywhere Professional Certificate",
+      "IssuingOrganization": "Not specified",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "AI-ML Certificate",
+      "IssuingOrganization": "AICTE",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "AR-VR Certificate",
+      "IssuingOrganization": "AICTE",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "AI-ML Virtual Internship",
+      "IssuingOrganization": "AICTE",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "AR-VR Virtual Internship",
+      "IssuingOrganization": "AICTE",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "IBM SkillBuild Internship - Data Analytics",
+      "IssuingOrganization": "IBM SkillBuild",
+      "Date": "Not specified"
+    },
+    {
+      "Certification": "IBM SkillBuild Internship - MS Excel",
+      "IssuingOrganization": "IBM SkillBuild",
+      "Date": "Not specified"
+    }
+  ]
+}
+
+ 
+  
+  
+ 
